@@ -4,13 +4,7 @@
 
 echo ******files********
 echo
-for item in *
-do
-	if [ -f $item ];
-	   then
-		echo $item
-	fi
-done
+ls *
 echo
 echo ******directory********
 echo
@@ -24,15 +18,15 @@ done
 echo
 echo ******size*******
 echo
-du *
+du -sh ./*
 echo
-echo ******content of file******
+echo ******content of text-file******
 echo
-cat *
-echo
-echo
-echo
-echo *******location**********
+cat react.txt
 echo
 echo
-ls
+echo
+echo *******current location**********
+echo
+echo
+pwd
